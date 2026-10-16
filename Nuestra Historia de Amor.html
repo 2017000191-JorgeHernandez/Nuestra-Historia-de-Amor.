@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia N&J ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #250610, #5b1029, #250610);
+            color: #fff0f3;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            color: #ffb6c8;
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #f7dce4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        nav button {
+            background: transparent;
+            color: white;
+            border: 1px solid #e89aad;
+            border-radius: 25px;
+            padding: 12px 18px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav button:hover {
+            background: #e89aad;
+            color: #390b1a;
+            transform: translateY(-3px);
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .pagina {
+            display: none;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 182, 200, 0.3);
+            border-radius: 20px;
+            padding: 35px 25px;
+            animation: aparecer 0.5s ease;
+        }
+
+        .pagina.activa {
+            display: block;
+        }
+
+        .pagina h2 {
+            color: #ffb6c8;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .pagina p {
+            line-height: 1.9;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        .corazon {
+            font-size: 55px;
+            margin: 20px;
+            animation: latir 1.3s infinite;
+        }
+
+        .boton {
+            background: #e89aad;
+            color: #390b1a;
+            border: none;
+            padding: 13px 22px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .boton:hover {
+            background: #ffd2dd;
+        }
+
+        .recuerdo {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            padding: 18px;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            color: #f7cbd7;
+        }
+
+        @keyframes latir {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            nav button {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+
+            .pagina {
+                padding: 25px 16px;
+            }
+        }
+
+        .foto-pareja {
+         width: 100%;
+            max-width: 190px;
+            height: auto;
+            display: block;
+             margin: 20px auto;
+             border-radius: 18px;
+             border: 3px solid #e89aad;
+             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+            .foto-lago {
+         width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+             margin: 20px auto;
+             border-radius: 18px;
+             border: 3px solid #e89aad;
+             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+        .foto-carta {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 3px solid #e89aad;
+    box-shadow: 0 5px 20px rgba(232, 154, 173, 0.3);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Un lugar de un poquitititito de Nosotros ❤️</h1>
+        <p>Esta pagina es sencilla pero con mucho amor.</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrarPagina('inicio')">Inicio</button>
+        <button onclick="mostrarPagina('historia')">Nuestra Historia desde El comienzo</button>
+        <button onclick="mostrarPagina('recuerdos')">Nuestros Recuerdos Juntitos</button>
+        <button onclick="mostrarPagina('cartas')">Carta para mi Amoshito Bello</button>
+        <button onclick="mostrarPagina('razones')">¿Por qué te amo?</button>
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="pagina activa">
+            <div class="corazon">❤️</div>
+            <h2>Bienvenida, mi muñequita hermosha, preciosha, divina, mi mujercita, mi princesita...</h2>
+            <p>
+                Hice esta pagina pensando en todo lo bonito de nosotros,
+                en todo lo que hemos vivido y en todos los momentos
+                bonitos que todavía nos esperan.
+            </p>
+            <p>Nuestra historia merece un lugar especial, por eso esta pagina. 💗</p>
+            <button class="boton" onclick="mostrarPagina('historia')">
+                Comenzar nuestro viaje ✨
+            </button>
+        </section>
+
+        <section id="historia" class="pagina">
+            <h2>📖 Nuestra Historia</h2>
+
+            <div class="recuerdo">
+                <h3>💌 Donde Todo Comenzo</h3>
+                <p>
+                    Todo comenzó el 19 de abril de 2025, con risas escondidas entre mensajes, un amor enorme y tímido, pero sobre todo, muy, muy real. Empezamos a hablar, a conocernos poquito a poquito y a enamorarnos incluso más de lo que aquella primera mirada nos había hecho sentir. Sin darnos cuenta, empezamos a construir algo que se convertiría en una de las partes más bonitas de nuestras vidas.
+                </p>
+            </div>
+
+            <div class="recuerdo">
+                <h3>💋 Nuestro primer beshito</h3>
+                <p>
+                    Llegó el día en que nos volveríamos a reencontrar: el 10 de mayo de 2025. Ese día, el destino decidió que ya era suficiente de palabras, de mensajes y de imaginar cómo sería volver a tenernos frente a frente. Por fin, nos volvimos a ver, y ahí estábamos, entre nervios, miradas que lo decían todo y sonrisas que no podíamos esconder. Ocurrió algo que cambiaría nuestra historia para siempre: nuestro primer beshito. No fue un beso cualquiera, mi niña hermosha. Fue uno de esos momentos que se quedan guardaditos en el corazón, de esos que marcan un antes y un después, como si por un instante el mundo entero se hubiera quedado en silencio y solo existiéramos tu y yo. 
+                </p>
+            </div>
+
+            <div class="recuerdo">
+                <h3>❤️ El día que tome la mejor decisión de mi vida</h3>
+                <p>
+                    Llegó uno de los días más bonitos e importantes de nuestra historia: el 11 de octubre de 2025, el día en que te pedí que fueras mi noviecita hermosha. Después de todas esas conversaciones, de las sonrisas que nos regalábamos, de los nervios, de nuestro primer beshito y de todos esos sentimientos que poquito a poquito fueron creciendo entre nosotros, llegó el momento de dar un pasito más y comenzar una nueva etapa juntos. Una etapa en la que ya no solamente seríamos dos personitas enamorándose, sino dos corazones que decidieron darse la oportunidad de construir algo bonito.
+                </p>
+            </div>
+
+            <p>
+                Y lo más hermoso de todo, mi niña, es que todavía nos quedan muchísimos sueños por cumplir, lugares por conocer, abrazos por darnos, beshitos por compartir y recuerdos que aún no sabemos que se convertirán en nuestros favoritos.
+            </p>
+        </section>
+
+        <section id="recuerdos" class="pagina">
+            <h2>📸 Nuestros Recuerdos</h2>
+            <p>
+                Aquí podremos guardar estas fotitos y escribir un poquito de lo que paso esos días.
+            </p>
+
+            <div class="recuerdo">
+                <h3> 12 de mayo de 2025 — Nuestra primera cita</h3>
+                <img src="nosotros.jpeg" alt="Nuestra foto" class="foto-pareja">
+                
+                <p>Este día fuimos a jugar boliche. Nos escapamos los dos de casa para compartir como una parejita que solo quería estar juntita. Entre juegos, risas, miraditas y beshitos que decían más que mil palabras, fuimos creando recuerdos que hasta hoy significan muchísimo para nosotros.</p>
+            </div>
+
+            <div class="recuerdo">
+                <h3>31 de diciembre — Conociendo el Lago de Atitlan Juntitos </h3>
+                <img src="./lago.jpeg" alt="Conociendo El Lago Atitlan" class="foto-lago">
+                
+                <p> Este día fue muy especial para nosotros, mi niña hermosa, porque fue la primera vez que amanecimos durmiendo juntitos. Estábamos en casa, rodeados de familiares, y aunque casi nadie se dio cuenta de nuestro pequeño secretito… bueno, una personita sí, pero shhhhhhh. Habíamos planeado ir a ver juntos la salida del sol en el lago, y cuando por fin llegó ese momento, fue tan romántico y bonito que parecía sacado de una película. </p>
+            </div>
+        </section>
+
+        <section id="cartas" class="pagina">
+            <h2>💌 Una carta para el amor de mi vida</h2>
+            <p>
+                Si alguna vez quieres recordar lo especial que eres
+                para mí, quiero que sepas que ocupás un lugar
+                muy bonito en mi corazón.
+            </p>
+
+            <button class="boton" onclick="abrirCarta()">
+                Abrí tu cartita hecha por tu amoshito 💗
+            </button>
+
+            <p id="mensajeCarta" style="display:none; margin-top:25px;">
+                Mi niña hermosa, gracias por formar parte de mi vida. ❤️
+
+                Me encanta compartir momentos contigo, conocer cada parte de tu corazón y seguir creando recuerdos juntitos. Créeme cuando te digo que no te quiero perder jamás, cuando te digo que eres la mujer más hermosa que puede haber en esta galaxia y cuando te digo que eres tu con quien quiero absolutamente todo. Quiero hacer un hogar donde nazca un amor inmenso todos los días, formar esa familia con la que tanto soñamos y tener a nuestros príncipes y a nuestra princesa. 💗
+
+                Tenemos muchísimo por delante juntos, mi reina hermosha, y quiero que sigamos eligiéndonos cada día, aprendiendo de nuestros errores y demostrando que nuestro amor es más fuerte que cualquier dificultad. Que las peleas no nos separen y que nunca dejemos de demostrarnos ese cariño que, desde el día uno, ha ido cambiando, pero no para mal, sino para crecer, crecer y seguir creciendo cada día más juntitos.
+
+                Te vas a aburrir de tanto texto, te lo acabo de decir JAJAJAJAJAJA. Pero es que nunca me voy a cansar de recordarte lo muchísimo que te amo, mi princesita hermoshaa. Quiero que nunca dudes de lo importante que eres para mí ni de todas las cosas bonitas que sueño vivir a tu lado.
+
+                TE AMODORO MUCHSISIISISISISÍSIMO, MI PRINCESITA HERMOSHAAA.  
+                Jamás en la vida lo olvidesssh.❤️❤️
+
+                <img src="Familia.jpeg" alt="NuestraFamilia" class="foto-carta">
+            </p>
+        </section>
+
+        <section id="razones" class="pagina">
+            <h2>💗 ¿Por qué te amodoro?</h2>
+            <p>Presioná el botón para descubrir una razón.</p>
+
+            <div class="corazon">💖</div>
+
+            <p id="razonTexto"></p>
+
+            <button class="boton" id="botonRazon" onclick="siguienteRazon()">
+            Dale aquí para saber las razones ✨
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        Hecho con todo el amor del mundo. ❤️
+        <p>Una historia que se sigue escribiendo, dos corazones y muchisisisisisimas metas.</p>
+    </footer>
+
+    <script>
+        function mostrarPagina(id) {
+            const paginas = document.querySelectorAll('.pagina');
+
+            paginas.forEach(function(pagina) {
+                pagina.classList.remove('activa');
+            });
+
+            document.getElementById(id).classList.add('activa');
+
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function abrirCarta() {
+            const mensaje = document.getElementById('mensajeCarta');
+
+            if (mensaje.style.display === 'none') {
+                mensaje.style.display = 'block';
+            } else {
+                mensaje.style.display = 'none';
+            }
+        }
+
+        const razones = [
+            '1-Porque tu sonrisa es de mis cosas favoritas. ❤️',
+            '2-Porque me encanta compartir tiempo contigo. 🫶',
+            '3-Porque tienes una forma especial de alegrar mis días. 💗',
+            '4-Porque amo los recuerdos que construimos juntitos. 📸',
+            '5-Porque me encanta seguir conociéndote. 🌷',
+            '6-Porque eres una persona muy especial para mí. 💌',
+            '7-Porque quiero seguir creando momentos bonitos a tu lado. ✨',
+            '8-Porque te amo por quien eres, con todo tu corazón. ❤️',
+            '9-Porque tu sonrisa hace más bonitos mis días. ✨',
+            '10-Porque contigo quiero vivirlo todo. ✨',
+            '11- 10 razones no bastan para explicar un amor tan infinito como el que siento por ti, mi muñequita hermosa. ❤️'
+
+
+        ];
+
+        let indiceRazon = 0;
+
+        function siguienteRazon() {
+         document.getElementById('razonTexto').textContent =
+        razones[indiceRazon];
+
+            indiceRazon = (indiceRazon + 1) % razones.length;
+
+            const boton = document.getElementById('botonRazon');
+            boton.textContent = 'Dale otra vez para otra razón 💗';
+}
+    </script>
+
+</body>
+</html>
